@@ -96,29 +96,91 @@
 
 // -----------------------------------------------------------
 
-abstract class Animal {
-    name: string;
+// abstract class Animal {
+//     name: string;
 
-    constructor(theName: string) {
-        this.name = theName;
-    }
+//     constructor(theName: string) {
+//         this.name = theName;
+//     }
 
-    walk(distance: number) {
-        console.log(`Hi, my name is ${this.name} and I walked ${distance} meters`);
-    }
-}
+//     walk(distance: number) {
+//         console.log(`Hi, my name is ${this.name} and I walked ${distance} meters`);
+//     }
+// }
 
-class Dog extends Animal {
-    breed: string;
-    constructor(theName: string, breed: string) {
-        super(theName)
-        this.breed = breed;
-    }
+// class Dog extends Animal {
+//     breed: string;
+//     constructor(theName: string, breed: string) {
+//         super(theName)
+//         this.breed = breed;
+//     }
 
-    barked(numBarks: number) {
-        console.log(`${this.name} barked ${numBarks} times today.`);
-    }
-}
+//     barked(numBarks: number) {
+//         console.log(`${this.name} barked ${numBarks} times today.`);
+//     }
+// }
 
-let filo = new Dog('Filo', 'Golden Retriever');
+// let filo = new Dog('Filo', 'Golden Retriever');
 // filo.barked(15);
+
+// -----------------------------------------------------------
+// class Greeter {
+//     firstName = 'Xavier';
+
+//     sayHello() {
+//         setTimeout(() => {
+//             console.log(`Hello, ${this.firstName}`);
+//         }, 2000);
+//     }
+// }
+
+// let greeter = new Greeter();
+// greeter.sayHello();
+// -----------------------------------------------------------
+
+interface UserCodes {
+    name: string;
+    email: string;
+    age: number;
+    sayName();
+}
+
+class User implements UserCodes {
+    name: string;
+    email: string;
+    age: number;
+
+    constructor(name: string, email: string, age: number) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+
+    sayName() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+
+class Member extends User {
+    memberId: number;
+
+    constructor(name: string, email: string, age: number, memberId: number) {
+        super(name, email, age);
+        this.memberId = memberId;
+    }
+
+    sayName() {
+        super.sayName();
+    }
+
+    payForMembership() {
+        console.log(`${this.name} has paid his membership fee.`);
+    }
+}
+
+let bob = new User('Bob', 'bob@email.com', 40);
+bob.sayName();
+
+let mike = new Member('Mike', 'mike@email.com', 35, 1);
+mike.sayName();
+mike.payForMembership();
