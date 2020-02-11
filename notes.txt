@@ -1,0 +1,30 @@
+What Does TS Offer?
+    * Static Type Checking
+    * Class Based Objects (JavaScript is prototype-based based but can use classes in ES6)
+    * Modularity (import files and modules and components)
+    * ES6 Features
+    * Syntax closer to other high level languages
+
+Static Type Checking
+    Can check and assign variable, parameter and function types
+    Helps find and prevent bugs
+    Makes code more readable and descriptive
+
+Types
+    String
+    Number
+    Boolean
+    Array
+    Any
+    Void - no type returned
+    Null
+    Tuple - Array with fixed num of elements
+    Enum - enumerated values
+    Generics - Type of constraints
+
+Class Based Objects
+    OOP in JavaScript
+    No prototypes
+    Encapsulation
+    Inheritance - inherit classes for subclasses
+    Modifiers (private, public, protected)
