@@ -31,3 +31,4 @@ Class Based Objects
 
 Watch command in node
     tsc <file> -w
+    tsc --target es5 filename.ts -w
