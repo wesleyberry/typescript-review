@@ -28,3 +28,6 @@ Class Based Objects
     Encapsulation
     Inheritance - inherit classes for subclasses
     Modifiers (private, public, protected)
+
+Watch command in node
+    tsc <file> -w

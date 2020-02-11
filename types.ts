@@ -25,6 +25,7 @@ numArr = [1, 2, 3];
 boolArr = [true, false, false, true];
 strNumTuple = ['Hello', 4];
 
+/*
 console.log(myString);
 console.log(myNum);
 console.log(myBool);
@@ -36,3 +37,4 @@ console.log(strNumTuple);
 console.log(myVoid);
 console.log(myNull);
 console.log(myUndefined);
+*/
