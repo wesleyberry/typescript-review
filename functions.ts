@@ -26,3 +26,14 @@ function myVoid():void {
     
 }
 // console.log(myVoid());
+// ---------------------------------------------------
+interface Profile {
+    name: string,
+    id: number
+}
+
+let getId = function(profile1: Profile) {
+    return profile1.id
+}
+
+console.log(getId({name: 'tech', id: 1}));

@@ -21,4 +21,7 @@ function getName(firstName, lastName) {
 // console.log(getName('Sully '));
 function myVoid() {
 }
-// console.log(myVoid());
+var getId = function (profile1) {
+    return profile1.id;
+};
+console.log(getId({ name: 'tech', id: 1 }));
